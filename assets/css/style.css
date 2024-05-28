@@ -36,8 +36,8 @@ body{
 #navbar .page_padding{
   grid-column-gap: 12px;
   grid-row-gap: 12px;
-  padding-left: 5%;
-  padding-right: 20%;
+  padding-left: 3%;
+  padding-right: 0%;
 }
 #navbar .navbar-toggler span{
   color: white!important;
@@ -865,6 +865,36 @@ body{
    #hero .bg_devRight{
     display: none;
    }
+   #navbar .page_padding{
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+    padding-left: 5%;
+    padding-right: 20%;
+  }
+  #talent_problem .left{
+    position: relative;
+  }
+
+  #talent_problem .right{
+    
+  }
+  #talent_problem .right_bgLine{
+      display: none;
+  }
+  #talent_problem .left_bgLine{
+    display: none;
+  }
+  #talent_problem .talent_problem_wrapper{
+    grid-column-gap: 5rem;
+    grid-row-gap: 5rem;
+    grid-template-rows: auto;
+    grid-template-columns: none;
+    grid-auto-columns: 1fr;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+  }
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px){
@@ -878,28 +908,6 @@ body{
     display: flex;
    margin-bottom: 20px;  
    }
-
-   #hero{
-   }
-   
-   /* #navbar .dropdown-menu{
-    height: 270px;
-    width: 70%;
-    background-color: #050505;
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(31, 35, 67, .52) 100%, #fff);
-    border: 1px solid #1f2343;
-    border-radius: 20px;
-    padding-left: 10px;
-  }
-  #navbar .dropdown_content{
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    gap: 6px;
-    overflow: hidden;
-    width: auto;
-    position: relative;
-  } */
   }
 
   @media only screen and (min-width: 300px)and (max-width: 478px) {
@@ -907,15 +915,54 @@ body{
         letter-spacing: 0;
         font-size: 3.2rem;
     }
+    #talent_problem .left h2{
+      color: white;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 8.5vw;
+      font-weight: 600;
+      line-height: 1.2;
+      text-align: center;
+      width: 100%;
+      max-width: 35rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .talent_problem_text {
+      font-size: 1.125rem;
+      line-height: 1.4;
+  }
   }
   @media screen and (min-width: 479px) {
     #hero .hero_title h1 {
         font-size: 8.5vw;
     }
+    #talent_problem .left h2{
+      color: white;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 8.5vw;
+      font-weight: 600;
+      line-height: 1.2;
+      text-align: center;
+      width: 100%;
+      max-width: 35rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .talent_problem_text {
+      font-size: 1.125rem;
+      line-height: 1.4;
+  }
+
 }
 @media screen and (min-width: 991px) {
   #hero .hero_title h1{
       font-size: 4.5rem;
+  }
+  #talent_problem .left h2{
+    letter-spacing: 0;
+      font-size: 2.2rem;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
