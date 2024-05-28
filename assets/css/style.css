@@ -37,7 +37,7 @@ body{
   grid-column-gap: 12px;
   grid-row-gap: 12px;
   padding-left: 5%;
-  padding-right: 15%;
+  padding-right: 20%;
 }
 #navbar .navbar-toggler span{
   color: white!important;
