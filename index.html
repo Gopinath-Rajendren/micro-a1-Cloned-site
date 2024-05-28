@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>micro_a1-clone</title>
+           <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- bootstrap links -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">       
+        <!-- font awesome link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- google fonts link -->
+        <link href="https://fonts.googleapis.com/css2?family=Anta&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kanit:ital,wght@0,300;1,200&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@200;300&family=Tilt+Neon&display=swap" rel="stylesheet">
+        <!-- css link-->
+        <!-- aos animation link -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <header>
+          <!-- Navbar start -->
+            <section id="navbar">
+              <div class="navbar_wrappper">
+                <div class="page_padding">
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"><img src="./assets/images/main-logo.svg" alt="#mainLogo"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fa-solid fa-bars" onclick="changeIcon(this)"></i></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav" >
+                        <ul class="navbar-nav" >
+                          
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                  products<img src="./assets/images/dropdown-taggle.svg" alt="dropdown-taggle" class="aero">
+                                </a>
+                                <div class="dropdown_box">
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li>
+                                    <a class="dropdown-item" href="#">
+                                      <div class="nav_link_bg">
+                                        <img src="./assets/images/dropdown img-1.svg" alt="img1">
+                                        <div class="dropdown_content">
+                                          <div class="dropdown_content_head">Talent</div>
+                                          <div class="dropdown_content_item">Hire world-class engineers for your core team</div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <div class="nav_link_bg">
+                                      <img src="./assets/images/dropdown img-2.svg" alt="img1">
+                                      <div class="dropdown_content">
+                                        <div class="dropdown_content_head">gpt-vetting</div>
+                                        <div class="dropdown_content_item">The first ever AI interviewer</div>
+                                      </div>
+                                    </div>
+                                     
+                                  </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <div class="nav_link_bg">
+                                    <img src="./assets/images/dropdown img-3.svg" alt="img1">
+                                    <div class="dropdown_content">
+                                      <div class="dropdown_content_head">microLab</div>
+                                      <div class="dropdown_content_item">A managed extension to your engineering team</div>
+                                    </div>
+                                  </div>
+                                   
+                                </a>
+                            </li>
+                                </ul>
+                              </div>
+                              </li>
+                          <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Vetting Process</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">How It Works</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                          </li>
+                        </ul>
+                        <ul class="navbar-nav right_navbar" >
+                          
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Apply as a Engineer</a>
+                        </li>
+                        <div class="nav_buttons">
+                        <li class="nav-item">
+                          <button type="button" class="btn btn-outline-danger nav_btn1">Hire Top 1% Engineers</button>
+                      </li>
+                      <li class="nav-item second_navitem_button">
+                        <button type="button" class="btn btn-outline-danger nav_btn2">Login</button>
+                    </li>
+                  </div>
+                      </ul>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+                </div>
+            </section>
+          <!-- Navbar end -->
+        </header>
+        
+        <main>
+          <!-- Hero Section start -->
+            <section id="hero" >
+                  <div class="heroSectionPadding">
+                    <div class="container_medium">
+                      <div class="hero_component">
+                        <div class="hero_title">
+                          <h1><span class="text-gradient">AI recruitment engine </span>to hire deeply vetted engineers fast</h1>
+                        </div>
+                        <div class="hero_description">
+                          <p>We vet 20k+ engineers each month & match you with the top ones instantly. 1st week is free.</p>
+                        </div>
+                        <div class="hero_btn">
+                          <a href="#">Hire top 1% engineers</a>
+                        </div>
+                        <div class="hero_bg">
+                          <div class="bg_devLeft">
+                            <div class="dev_imagesLeftTop">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/6621514b709792c0877685b0_Ellipse%20328%20(1).webp" alt="img" class="dev_img">
+                            </div>
+                            <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/6621514b709792c087768345_Ellipse%20385.svg" alt="line" class="bg_dev_line">
+                            <div class="dev_imagesLeftBottom">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/6621514b709792c0877685b0_Ellipse%20328%20(1).webp" alt="img" class="dev_img">
+                            </div>
+                          </div>
+                          <div class="bg_devRight">
+                            <div class="dev_imagesRightTop">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/6621514b709792c0877685b0_Ellipse%20328%20(1).webp" alt="img" class="dev_img">
+                            </div>
+                            <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/6621514b709792c087768345_Ellipse%20385.svg" alt="line" class="bg_dev_line">
+                            <div class="dev_imagesRightBottom">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/6621514b709792c0877685b0_Ellipse%20328%20(1).webp" alt="img" class="dev_img">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="video_component">
+                        <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/6621514b709792c0877680dc_Ellipse%20310%20(5).svg" alt="vieoImg" class="vieoImg" >
+                        <a href="#" class="vieo_lightbox">
+                          <div class="video_border">
+                            <div class="bg_gradient1"></div>
+                            <div class="bg_gradient2"></div>
+                            <img src="./assets/images/video_thumbnail.webp" alt="video_img" class="video_thumbnail">
+                            <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/6621514b709792c087768674_Play%20icon.webp" alt="play-btn" class="Video_play_btn">
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+            <!-- Hero Section end -->  
+
+            <!-- partner Section start -->
+            <section id="partner">
+              <div class="container">
+                <div class="bg_grid_gradient"></div>
+                  <div class="page_padding">
+                    <div class="section_partner">
+                      <h2>Featured on</h2>
+                      <div class="logo_list">
+                        <a href="#"><img src="./assets/images/partnersLogo1.svg" alt="partnersimg1"></a>
+                        <a href="#"><img src="./assets/images/partnersLogo2.svg" alt="partnersimg1"></a>
+                        <a href="#"><img src="./assets/images/partnersLogo3.svg" alt="partnersimg1"></a>
+                      </div>
+                      <div class="divider_wrap ">
+                        <div class="divider_line"></div>
+                        <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/6621514b709792c087768351_Star%204.svg" loading="lazy" alt="" class="divider_icon">
+                        <div class="divider_line"></div>
+                      </div>
+                      <h3>Trusted by 100+  amazing companies</h3>
+                      <div class="marquee_components">
+                        <div class="logos_marquee_shadow"></div>
+                        <div class="logos_marquee_shadow1"></div>
+                        <div class="marquee_track">
+                          <div class="marquee_list">
+                            <div class="marquee_item">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/662ad6165942ec9f077c39e2_g853%20(1).png" alt="#">
+                              <div class="logos_marquee_divider"></div>
+                            </div>
+                            <div class="marquee_item">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/6621514b709792c08776842e_deel-1%20logo.svg" alt="#">
+                              <div class="logos_marquee_divider"></div>
+                            </div>
+                            <div class="marquee_item">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/6621514b709792c08776844f_64ba5cf6913daccfa5434904_Logo%201.svg" alt="#">
+                              <div class="logos_marquee_divider"></div>
+                            </div>
+                            <div class="marquee_item">
+                              <img src="	https://assets-global.website-files.com/6621514b70…2c08776844f_64ba5cf6913daccfa5434904_Logo%201.svg" alt="#">
+                              <div class="logos_marquee_divider"></div>
+                            </div>
+                            <div class="marquee_item">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/6621514b709792c08776842a_logo%201.svg" alt="#">
+                              <div class="logos_marquee_divider"></div>
+                            </div>
+                            <div class="marquee_item">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/662ad661890e11fa747f305f_image%201%20(4).png" alt="#">
+                              <div class="logos_marquee_divider"></div>
+                            </div>
+                            <div class="marquee_item">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/6621514b709792c0877684fb_download%20(60)%20(1).png" alt="#">
+                              <div class="logos_marquee_divider"></div>
+                            </div>
+                            <div class="marquee_item">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/662ad62b890e11fa747f01ce_Group%2033894.png" alt="#">
+                              <div class="logos_marquee_divider"></div>
+                            </div>
+                            <div class="marquee_item">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/6621514b709792c087768453_Property%201%3DWebflow.svg" alt="#">
+                              <div class="logos_marquee_divider"></div>
+                            </div>
+                            <div class="marquee_item">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/662ad67e2443769824681e8b_Logo%20(14).png" alt="#">
+                              <div class="logos_marquee_divider"></div>
+                            </div>
+                            <div class="marquee_item">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/662ad60a15b0f4bbf72aab25_image%20146%20(1).png" alt="#">
+                              <div class="logos_marquee_divider"></div>
+                            </div>
+                            <div class="marquee_item">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/662ad6c04ffebdb9adb06fef_zs_logo.svg.png" alt="#">
+                              <div class="logos_marquee_divider"></div>
+                            </div>
+                          </div>
+                          <div class="marquee_list">
+                            <div class="marquee_item">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/662ad6165942ec9f077c39e2_g853%20(1).png" alt="#">
+                              <div class="logos_marquee_divider"></div>
+                            </div>
+                            <div class="marquee_item">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/6621514b709792c08776842e_deel-1%20logo.svg" alt="#">
+                              <div class="logos_marquee_divider"></div>
+                            </div>
+                            <div class="marquee_item">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/6621514b709792c08776844f_64ba5cf6913daccfa5434904_Logo%201.svg" alt="#">
+                              <div class="logos_marquee_divider"></div>
+                            </div>
+                            <div class="marquee_item">
+                              <img src="	https://assets-global.website-files.com/6621514b70…2c08776844f_64ba5cf6913daccfa5434904_Logo%201.svg" alt="#">
+                              <div class="logos_marquee_divider"></div>
+                            </div> 
+                            <div class="marquee_item">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/6621514b709792c08776842a_logo%201.svg" alt="#">
+                              <div class="logos_marquee_divider"></div>
+                            </div>
+                            <div class="marquee_item">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/662ad661890e11fa747f305f_image%201%20(4).png" alt="#">
+                              <div class="logos_marquee_divider"></div>
+                            </div>
+                            <div class="marquee_item">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/6621514b709792c0877684fb_download%20(60)%20(1).png" alt="#">
+                              <div class="logos_marquee_divider"></div>
+                            </div>
+                            <div class="marquee_item">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/662ad62b890e11fa747f01ce_Group%2033894.png" alt="#">
+                              <div class="logos_marquee_divider"></div>
+                            </div>
+                            <div class="marquee_item">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/6621514b709792c087768453_Property%201%3DWebflow.svg" alt="#">
+                              <div class="logos_marquee_divider"></div>
+                            </div>
+                            <div class="marquee_item">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/662ad67e2443769824681e8b_Logo%20(14).png" alt="#">
+                              <div class="logos_marquee_divider"></div>
+                            </div>
+                            <div class="marquee_item">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/662ad60a15b0f4bbf72aab25_image%20146%20(1).png" alt="#">
+                              <div class="logos_marquee_divider"></div>
+                            </div>
+                            <div class="marquee_item">
+                              <img src="https://assets-global.website-files.com/6621514b709792c087767bd3/662ad6c04ffebdb9adb06fef_zs_logo.svg.png" alt="#">
+                              <div class="logos_marquee_divider"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="padding_global">
+                        <div class="divider_wrap">
+                          <div class="divider_line"></div>
+                          <div class="divider_icon is-circle"></div>
+                          <div class="divider_line"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </section> 
+            <!-- partner Section end -->  
+
+            <!-- talent_problem Section start -->  
+            <!-- <section id="talent_problem">
+              <div class="container_medium">
+                <div class="padding_global">
+                  <div class="inner_section_padding">
+                    <div class="talent_problem_wrapper">                  
+                          <div class="left">
+                            <h2>Hiring top engineering talent globally is hard.</h2>
+                              <div class="left_bgLine">
+                                <svg width="100%" height="100%" viewBox="0 0 415 394" fill="none">
+                                  <path class="problem_line" d="M254.991 0.987623C280 17.5 266.926 64.6153 255.921 78.1736C248.495 87.3218 244.001 93.6573 232.61 99.0731C224.013 103.161 213.287 103.298 204.187 105.693C195.888 107.878 188.108 110.964 180.021 113.711C167.592 117.931 156.268 124.872 144.847 131.152C134.456 136.867 121.794 142.174 114.65 152.116C106.098 164.015 97.0997 173.759 89.8735 186.591C80.2163 203.741 78.1286 218.985 75.4405 238.498C68.8395 286.415 100.264 329.08 147.929 337.126C174.093 341.543 201.165 341.303 227.595 342.529C238.352 343.028 248.369 343.874 258.955 342.493C269.847 341.072 279.962 341.28 289.443 334.84C302.395 326.041 306.444 304.543 308.603 290.474C311.992 268.383 316.413 245.1 306.018 224.066C296.549 204.909 279.761 191.91 263.994 178.16C243.371 160.174 216.801 153.146 191.062 146.636C171.789 141.762 147.921 137.638 128.636 143.102C102.73 150.442 79.0388 164.399 58.6608 181.886C32.399 204.423 9.51174 228.086 4.60698 263.69C1.13656 288.882 -3.71603 312.853 7.36595 336.909C18.3522 360.757 41.6848 369.233 65.7752 374.739C101.557 382.919 140.186 385.395 176.689 383.13C205.314 381.354 241.031 385.612 266.751 369.603C289.409 355.5 292.362 329.068 295.773 304.307C299.828 274.873 298.211 236.238 276.503 212.909C258.632 193.703 232.832 186.26 207.935 181.277C189.022 177.492 163.307 168.097 144.119 174.614C126.333 180.654 107.761 189.35 97.2489 205.741C74.7575 240.812 106.217 278.03 134.14 298.453C155.022 313.726 180.419 312.894 204.102 307.483C231.082 301.318 261.874 290.706 284.376 273.967C296.767 264.749 301.768 254.815 305.1 239.541C311.566 209.893 314.4 181.046 311.874 150.717C308.661 112.136 298.346 78.6989 267.467 53.8299C235.285 27.9108 182.969 38.3469 147.753 48.3806C110.264 59.062 79.7137 70.8557 53.5507 100.036C35.3122 120.379 16.5858 148.646 21.3862 177.866C25.1889 201.013 49.2231 218.43 66.7331 231.22C96.7235 253.126 131.298 270.03 165.685 283.854C227.073 308.534 293.08 317.106 358.116 326.066C370.802 327.813 387.774 332.565 400.166 326.996C414.415 320.591 414.069 299.212 413.516 285.881C411.497 237.187 376.173 183.376 332.647 162.19C314.526 153.37 292.565 152.92 272.902 150.211C252.718 147.431 236.801 147.111 217.369 153.907C183.986 165.583 170.933 204.292 160.081 234.962C149.088 266.031 137.905 313.121 159.09 342.007C191.786 386.589 251.507 384.972 301.8 391.248C322.762 393.863 346.98 392.402 367.505 387.129C393.863 380.359 401.304 369.935 402.958 341.968C405.157 304.774 395.96 269.631 379.341 236.599C363.81 205.726 340.648 185.574 311.784 167.522C273.201 143.391 225.049 127.297 179.408 124.77C142.945 122.751 102.65 155.214 78.7017 179.582C51.0087 207.759 25.0256 235.127 21.1182 275.994C19.427 293.684 37.9975 311.541 49.738 322.283C69.0885 339.986 94.7018 353.874 119.843 361.116C146.228 368.716 174.173 376.184 201.854 376.669C232.17 377.2 263.927 360.178 291.684 350.142C318.896 340.304 346.468 330.791 372.561 318.127C386.151 311.532 402.982 302.964 406.962 287.207C413.574 261.024 402.756 234.02 393.554 209.786C382.763 181.365 366.655 151.469 342.184 132.606C300.207 100.246 245.524 95.3829 194.377 90.2605C163.796 87.1978 142.578 103.261 120.514 122.026C92.6001 145.767 63.835 175.984 52.8098 211.877C47.0984 230.471 47.5863 244.443 58.161 261.14C75.0498 287.806 98.6674 307.625 125.362 323.988C143.37 335.026 162.032 349.353 182.872 354.4C195.672 357.501 209.405 360.628 222.528 361.687C238.701 362.992 256.081 354.829 271.079 349.938C304.812 338.935 335.897 321.876 364.942 301.477C379.577 291.199 388.218 279.279 392.244 261.879C400.3 227.068 377.983 194.187 349.942 175.412C324.476 158.361 289.535 157.973 260.151 153.925C248.628 152.338 221.406 143.695 219.005 161.123C215.167 188.98 215.993 213.01 223.578 240.265C227.844 255.593 230.438 263.315 246.458 268.743C272.702 277.635 303.945 283.285 331.724 280.489C347.124 278.939 361.803 278.162 376.8 274.137C384.292 272.126 383.915 259.199 384.749 253.147" stroke="#383E80" stroke-wditht="1" stroke-linecap="round"></path>
+                                  </svg>
+                              </div>
+                          </div>
+                          <div class="right">
+                            <div class="right_bgLine">
+                              <div class="right_inner_bg">
+                                <svg width="100%" height="100%" viewBox="0 0 659 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M323 24V52.5C323 63.5457 331.954 72.5 343 72.5H638.5C649.546 72.5 658.5 81.4543 658.5 92.5V146C658.5 157.046 649.546 166 638.5 166H21C9.95432 166 1 174.954 1 186V303C1 314.046 9.95431 323 21 323H638.5C649.546 323 658.5 331.954 658.5 343V407C658.5 418.046 649.546 427 638.5 427H343C331.954 427 323 435.954 323 447V476" stroke="#383E80"></path>
+                                  <circle cx="322.5" cy="22.9556" r="22.5" fill="#0B0F2D"></circle>
+                                  <circle opacity="0.8" cx="322.5" cy="22.9556" r="9.5" fill="#6A8BFF"></circle>
+                                  <g filter="url(#filter0_b_16255_204226)">
+                                  <circle cx="323.5" cy="476.804" r="22.5" fill="#0B0F2D"></circle>
+                                  </g>
+                                  <circle opacity="0.8" cx="323.5" cy="476.804" r="9.5" fill="#6A8BFF"></circle>
+                                  <line x1="645.5" y1="477.152" x2="645.5" y2="13.1519" stroke="url(#paint0_linear_16255_204226)"></line>
+                                  <line x1="14.5" y1="449.152" x2="14.5" y2="23.1519" stroke="url(#paint1_linear_16255_204226)"></line>
+                                  <defs>
+                                  <filter id="filter0_b_16255_204226" x="286" y="439.304" width="75" height="75" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                  <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                  <feGaussianBlur in="BackgroundImageFix" stdDeviation="7.5"></feGaussianBlur>
+                                  <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_16255_204226"></feComposite>
+                                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_16255_204226" result="shape"></feBlend>
+                                  </filter>
+                                  <linearGradient id="paint0_linear_16255_204226" x1="646" y1="-5.1011" x2="646" y2="499.453" gradientUnits="userSpaceOnUse">
+                                  <stop stop-color="#2F3468" stop-opacity="0"></stop>
+                                  <stop offset="0.489583" stop-color="#2F3468"></stop>
+                                  <stop offset="1" stop-color="#2F3468" stop-opacity="0"></stop>
+                                  </linearGradient>
+                                  <linearGradient id="paint1_linear_16255_204226" x1="15" y1="6.39375" x2="15" y2="469.627" gradientUnits="userSpaceOnUse">
+                                  <stop stop-color="#2F3468" stop-opacity="0"></stop>
+                                  <stop offset="0.494792" stop-color="#2F3468"></stop>
+                                  <stop offset="1" stop-color="#2F3468" stop-opacity="0"></stop>
+                                  </linearGradient>
+                                  </defs>
+                                  </svg>
+                              </div>
+                            </div>
+                              <div class="talent_problem_list">
+                                <div class="talent_problem_item">
+                                  <div class="icon_box_component">
+                                    <div class="icon_box_inner_box">
+                                      <div class="icon_box_image">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 52 52" fill="none">
+                                          <g id="clock">
+                                          <path id="Vector" d="M26 47.6667C37.9662 47.6667 47.6667 37.9662 47.6667 26C47.6667 14.0339 37.9662 4.33337 26 4.33337C14.0338 4.33337 4.33334 14.0339 4.33334 26C4.33334 37.9662 14.0338 47.6667 26 47.6667Z" stroke="#6D7CFF" stroke-width="2.16743" stroke-linecap="round" stroke-linejoin="round"></path>
+                                          <g id="Group 1413371765">
+                                          <path id="hour" d="M26.0098 25.9648L25.9962 12.1793L26.0046 26.5194L26.009 26.0498" stroke="#6D7CFF" stroke-width="2.16743" stroke-linecap="round" stroke-linejoin="round"></path>
+                                          <path id="minute" d="M26 26.52L34.6666 30.8534" stroke="#6D7CFF" stroke-width="2.16743" stroke-linecap="round" stroke-linejoin="round"></path>
+                                          </g>
+                                          <path id="Ellipse 422" d="M28 26C28 27.1046 27.1046 28 26 28C24.8954 28 24 27.1046 24 26C24 24.8954 24.8954 24 26 24C27.1046 24 28 24.8954 28 26Z" fill="#6D7CFF"></path>
+                                          </g>
+                                          </svg>
+                                      </div>
+                                    </div> 
+                                  </div>
+                                  <p class="talent_problem_text">Technical interviews are costly & a waste of the product team's time</p>
+                                </div>
+                                <div class="talent_problem_item">
+                                  <div class="icon_box_component">
+                                    <div class="icon_box_inner_box">
+                                      <div class="icon_box_image">
+                                        <svg width="100%" height="100%" id="hammer-icon" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <g clip-path="url(#clip0_11116_1946)">
+                                          <path d="M25.558 3.72493L12.558 16.725C11.9234 17.3596 11.9234 18.3885 12.558 19.0231L15.8084 22.2734C16.443 22.908 17.4719 22.908 18.1065 22.2734L31.1065 9.2734C31.7411 8.63879 31.7411 7.6099 31.1065 6.9753L27.8561 3.72493C27.2215 3.09033 26.1926 3.09033 25.558 3.72493Z" stroke="#6D7CFF" stroke-width="2.27" stroke-linecap="round" stroke-linejoin="round"></path>
+                                          <path d="M43.4332 21.5999L30.4332 34.6C29.7986 35.2346 29.7986 36.2635 30.4332 36.8981L33.6835 40.1484C34.3181 40.783 35.347 40.783 35.9816 40.1484L48.9817 27.1484C49.6163 26.5138 49.6163 25.4849 48.9817 24.8503L45.7313 21.5999C45.0967 20.9653 44.0678 20.9653 43.4332 21.5999Z" stroke="#6D7CFF" stroke-width="2.27" stroke-linecap="round" stroke-linejoin="round"></path>
+                                          <path d="M30.2922 10.0872L42.6179 22.4128" stroke="#6D7CFF" stroke-width="2.27" stroke-linecap="round" stroke-linejoin="round"></path>
+                                          <path d="M18.9172 21.4622L31.2429 33.7878" stroke="#6D7CFF" stroke-width="2.27" stroke-linecap="round" stroke-linejoin="round"></path>
+                                          <path d="M27.5175 30.0625L13.0956 44.4844C12.4484 45.1294 11.5719 45.4916 10.6581 45.4916C9.74436 45.4916 8.86786 45.1294 8.22062 44.4844C7.57561 43.8371 7.21344 42.9606 7.21344 42.0469C7.21344 41.1331 7.57561 40.2566 8.22062 39.6094L22.6425 25.1875" stroke="#6D7CFF" stroke-width="2.27" stroke-linecap="round" stroke-linejoin="round"></path>
+                                          </g>
+                                          <defs>
+                                          <clipPath id="clip0_11116_1946">
+                                          <rect width="52" height="52" fill="white" transform="translate(0.705017)"></rect>
+                                          </clipPath>
+                                          </defs>
+                                          </svg>
+                                      </div>
+                                    </div> 
+                                  </div>
+                                  <p class="talent_problem_text">It's a headache to deal with international employment laws, payroll, and benefits</p>
+                                </div>
+                              </div>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section> -->
+            <!-- talent_problem Section end -->  
+
+          </main>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="./assets/js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>    
+    </body>
+</html>
+<script>
+  AOS.init();
+</script>
