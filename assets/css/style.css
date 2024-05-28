@@ -902,18 +902,18 @@ body{
   } */
   }
 
-  @media only screen and (max-width: 767px) {
+  @media only screen and (min-width: 300px)and (max-width: 478px) {
     #hero .hero_title h1 {
         letter-spacing: 0;
-        font-size: 2.2rem;
+        font-size: 3.2rem;
     }
   }
-  @media screen and (max-width: 479px) {
+  @media screen and (min-width: 479px) {
     #hero .hero_title h1 {
         font-size: 8.5vw;
     }
 }
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 991px) {
   #hero .hero_title h1{
       font-size: 4.5rem;
   }
