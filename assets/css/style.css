@@ -1422,7 +1422,7 @@ body{
     padding: .25rem 0.75rem;
     font-size: 1.25rem;
     position: relative;
-    right: 13rem;
+    right: 10rem;
     line-height: 1;
     background-color: transparent;
     border: 1px solid transparent;
@@ -1437,7 +1437,7 @@ body{
   align-items: center;
   justify-content: center;
   height: 42px;
-  width: 56%;
+  width: 290px;
   border: none;
   border-radius: 50px;
   font-weight: 700;
