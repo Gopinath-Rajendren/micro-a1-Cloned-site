@@ -1412,6 +1412,57 @@ body{
       left: 3rem;
   }
 }
+
+@media screen and (max-width: 991px) {
+  #talent_process .process_mobile_path{
+    width: 2rem;
+    top: 0%;
+    bottom: auto;
+    left: 2%;
+    right: auto;
+    z-index: -1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+      padding-top: 8px;
+      position: absolute;
+  }
+  #talent_process .process_mobile_path .process_mobile_border{
+    border-left-width: 1.5px;
+    border-left: 2px solid #383e80;
+    height: 97%;
+    padding-top: 0;
+  }
+  #talent_process .process_mobile_path .process_mobile_shadow{
+    background-image: linear-gradient(to top, black, transparent);
+    width: 22px;
+    height: 140px;
+    top: auto;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }
+  #talent_process .process_mob_dot {
+      border-width: 1.5px;
+      flex: none;
+      width: 2rem;
+      height: 2rem;
+      font-size: .8rem;
+      border: 2px solid #383e80;
+        background-image: linear-gradient(to bottom, var(--palette--transparent), #1f2343);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        color:#b2b2c1;
+        border-radius: 50%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        z-index: 1;
+        
+  }
+}
 /* talent_process Section end */
 /* offerings section start */
 #offering{
@@ -2519,6 +2570,58 @@ body{
     padding-left: 10%;
     width: 100%;
   }
+  #how .responsive_wrap svg .hundreds_application{
+    opacity: 1!important;
+    height: 21vw;
+    padding-left: 0;
+    padding-right: 0;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+  #how .responsive_wrap svg .online_test_tab{
+    opacity: 1!important;
+    height: 18vw;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+#how .responsive_wrap svg .casual_interview_tab{
+  opacity: 1!important;
+  height: 18vw;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+#how .responsive_wrap svg .technical_interview_tab{
+  opacity: 1!important;
+  height: 18.5vw;
+  flex: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+#how .responsive_wrap svg .test_phase_tab_title{
+  opacity: 1!important;
+  flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
   /* #how .responsive_view{
       max-width: 25rem;
       margin-top: 5rem;
@@ -2741,11 +2844,12 @@ body{
     text-align: left;
     top: -1.1rem;
     left: 68%;
+    text-align: left;
+    top: -1.1rem;
+    left: 0%;
     width: 8rem;
     font-size: .85rem;
     font-weight: 400;
-    justify-content: center;
-    align-items: center;
     padding: .3rem;
     display: flex;
     position: absolute;
@@ -2766,7 +2870,7 @@ body{
     position: absolute;
     top: 17%;
     bottom: auto;
-    left: -36%;
+    left: -35%;
     right: auto;
     grid-row-gap: 1.5rem;
     flex-direction: column;
@@ -2829,6 +2933,124 @@ body{
   }
   
   
+}
+@media screen and (max-width: 700px) {
+  #how .responsive_step .online_test_tab .online_test_tab_title {
+      top: 0.1rem;
+      left: -13.9rem;
+      text-align: right;
+      width: 8rem;
+      font-weight: 400;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      position: absolute;
+      padding: .3rem;
+      bottom: auto;
+      right: auto;
+      font-size: 3.5vw;
+  }
+  #how .responsive_step .loom_video_tab .loom_video_tab_title p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3.5vw;
+    line-height: 1.2;
+}
+#how .responsive_step .loom_video_tab .loom_video_tab_title {
+  text-align: left;
+  padding: 0;
+  top: 1%;
+  left: 92%;
+  width: 8rem;
+  font-size: .85rem;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  bottom: auto;
+  right: auto;
+}
+#how .responsive_step .technical_interview_tab .technical_interview_tab_title {
+  text-align: right;
+  top: 0.8rem;
+  left: -3rem;
+  bottom: auto;
+  right: auto;
+  width: 19vw;
+  padding: 0;
+  font-size: 3.5vw;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+}
+#how .responsive_step .casual_interview_tab .casual_interview_tab_title {
+  text-align: left;
+  top: 0.7rem;
+  left: 85%;
+  width: 19vw;
+  padding: 0;
+  font-size: 3.5vw;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  bottom: auto;
+  right: auto;
+}
+#how .responsive_step .test_phase_tab .test_phase_tab_title {
+  text-align: left;
+  top: 0.9rem;
+  left: -17%;
+  width: 19vw;
+  padding: 0;
+  font-size: 3.5vw;
+  font-weight: 400;
+  display: flex;
+  position: absolute;
+  bottom: auto;
+  right: auto;
+}
+#how .responsive_step .test_phase_tab .block1 .title {
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  opacity: 1;
+  color: white;
+  text-align: center;
+  max-width: 20vw;
+  margin-top: 1vw;
+  font-size: 4vw;
+  font-weight: 400;
+  position: absolute;
+  top: 56%;
+  bottom: auto;
+  left: -46%;
+  right: auto;
+}
+#how .header_width h2 {
+  color: #eee;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+#talent_solution .section_title h2 {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+#talent_problem .left h2 {
+  letter-spacing: 0;
+  font-size: 1.8rem;
+  text-align: center;
+}
 }
 #how .vet_container .bg_images img{
   width: 100%;
