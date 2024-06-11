@@ -1413,12 +1413,55 @@ body{
   }
 }
 
+@media only screen and (min-width: 300px) and (max-width: 478px) {
+  #hero .hero_title h1 {
+      letter-spacing: 0;
+      font-size: 2.2rem;
+  }
+  #navbar .navbar-toggler {
+    padding: .25rem 0.75rem;
+    font-size: 1.25rem;
+    position: relative;
+    right: 13rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: box-shadow .15s ease-in-out;
+}
+#navbar .nav-item .nav_btn2 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(31, 35, 67, .52) 100%, #fff);
+  color: white;
+  font-size: .8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  width: 56%;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  transition: 0.3s ease-out;
+}
+#talent_problem .talent_problem_item .talent_problem_text{
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+}
+@media only screen and (max-width: 500px) {
+  #slider .inner_max_width {
+      display: none;
+  }
+}
 @media screen and (max-width: 991px) {
+
   #talent_process .process_mobile_path{
     width: 2rem;
     top: 0%;
     bottom: auto;
-    left: 2%;
+    left: 3%;
     right: auto;
     z-index: -1;
     justify-content: center;
@@ -2937,7 +2980,7 @@ body{
 @media screen and (max-width: 700px) {
   #how .responsive_step .online_test_tab .online_test_tab_title {
       top: 0.1rem;
-      left: -13.9rem;
+      left: -11.9rem;
       text-align: right;
       width: 8rem;
       font-weight: 400;
@@ -2959,8 +3002,8 @@ body{
 #how .responsive_step .loom_video_tab .loom_video_tab_title {
   text-align: left;
   padding: 0;
-  top: 1%;
-  left: 92%;
+  top: 20%;
+  left: 81%;
   width: 8rem;
   font-size: .85rem;
   font-weight: 400;
@@ -2974,7 +3017,7 @@ body{
 #how .responsive_step .technical_interview_tab .technical_interview_tab_title {
   text-align: right;
   top: 0.8rem;
-  left: -3rem;
+  left: 2rem;
   bottom: auto;
   right: auto;
   width: 19vw;
@@ -2989,7 +3032,7 @@ body{
 #how .responsive_step .casual_interview_tab .casual_interview_tab_title {
   text-align: left;
   top: 0.7rem;
-  left: 85%;
+  left: 72%;
   width: 19vw;
   padding: 0;
   font-size: 3.5vw;
@@ -3027,7 +3070,7 @@ body{
   position: absolute;
   top: 56%;
   bottom: auto;
-  left: -46%;
+  left: -41%;
   right: auto;
 }
 #how .header_width h2 {
