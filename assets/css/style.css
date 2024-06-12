@@ -1458,7 +1458,7 @@ body{
 }
 #navbar .dropdown-menu {
   height: 290px;
-  width: 360px;
+  width: 300px;
   background-color: #050505;
   background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(31, 35, 67, .52) 100%, #fff);
   border: 1px solid #1f2343;
