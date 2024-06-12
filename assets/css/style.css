@@ -3213,7 +3213,7 @@ body{
   padding-top: 6.25rem;
 }
 #technologies .section_title{
-  max-width: 25rem;
+  max-width: 35rem;
   text-align: center;
   width: 100%;
   margin-left: auto;
@@ -3229,15 +3229,15 @@ body{
 }
 #technologies .tech_logos {
   /* display: none; */
-  animation: bounce 1s infinite alternate;
+  animation: bounce 5s infinite alternate;
 }
 @keyframes bounce {
-  from {
+  0% {
     transform: translateY(0);
-  }
-  to {
-    transform: translateY(-100px);
-  }
+}
+100% {
+    transform: translateY(+350px);
+}
 }
 #technologies .tech_logos img{
   vertical-align: middle;
@@ -3271,6 +3271,15 @@ body{
     max-width: 100%;
     display: inline-block;
 }
+@media screen and (max-width:770px) {
+  #technologies .section_title h2{
+    font-size: 1.2rem;
+    }
+    #faq .section_header h2{
+      font-size: 2rem!important;
+    }
+}
+
 
 /* technologies section end */
 
