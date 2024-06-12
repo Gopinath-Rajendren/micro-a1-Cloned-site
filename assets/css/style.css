@@ -1,9 +1,13 @@
 .selector-for-some-widget {
     box-sizing: content-box;
   }
+  html{
+    
+  }
 *{
     margin: 0%;
     padding: 0%;
+    overflow-x: clip;
 }
 body{
   background-color: black;
@@ -1425,7 +1429,7 @@ body{
     padding: .25rem 0.75rem;
     font-size: 1.25rem;
     position: relative;
-    right: 9rem;
+    left: 1rem;
     line-height: 1;
     background-color: transparent;
     border: 1px solid transparent;
@@ -1454,7 +1458,7 @@ body{
 }
 #navbar .dropdown-menu {
   height: 290px;
-  width: 310px;
+  width: 290px;
   background-color: #050505;
   background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(31, 35, 67, .52) 100%, #fff);
   border: 1px solid #1f2343;
@@ -1483,7 +1487,7 @@ body{
 #navbar .dropdown_box {
   background-color: #050505;
   background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(31, 35, 67, .52) 100%, #fff);
-  width: 60%;
+  width: 100%;
   position: relative;
 }
 }
