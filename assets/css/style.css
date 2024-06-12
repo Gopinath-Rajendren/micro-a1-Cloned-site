@@ -3344,10 +3344,10 @@ body{
 }
 .accordion-button:focus {
   z-index: 3;
-  border-color: #86b7fe;
+  border-color: none;
   outline: 0;
-  box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
-  display: none;
+  box-shadow: none;
+  
 }
 .accordion-button {
   margin-bottom: 0;
@@ -3923,6 +3923,8 @@ body{
   #footer .footer_logo_wrapper{
     transform: scale(.4) translate(-122%, 98%);
     width: 0;
+    left: auto;
+    bottom: 100px;
     max-width: none;
     height: 0;
   }
