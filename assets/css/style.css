@@ -9,6 +9,11 @@
     padding: 0%;
     overflow-x: clip;
 }
+@media screen  and (min-width:990px) {
+  *{
+    overflow-x: visible;
+  }
+}
 body{
   background-color: black;
   color: #b2b2c1;
@@ -155,7 +160,7 @@ body{
   align-items: center;
   justify-content: center;
   height: 42px;
-  width:290px;
+  width:170px;
    font-size: .8rem;
   font-weight: 700;
   border: none;
@@ -3994,7 +3999,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 42px;
+    height: 44px;
     width: 290%;
     border: none;
     border-radius: 50px;
